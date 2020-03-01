@@ -43,8 +43,8 @@
 <workers>${workers}</workers>
 <workerType>${workerType}</workerType>
 <region>us-west-1</region>
-<environment>${environment}</environment>
-<applicationName>${applicationName}</applicationName>
+<environment>Sandbox</environment>
+<applicationName>azure-cicd</applicationName>
 <properties>
 <mule.env>${mule.env}</mule.env>
 <encrypt.key>${encrypt.key}</encrypt.key>
