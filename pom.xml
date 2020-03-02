@@ -15,7 +15,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.2.2</app.runtime>
-		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.3.1</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -28,21 +28,17 @@
 				<configuration>
 				<cloudHubDeployment>
 <uri>https://anypoint.mulesoft.com</uri>
-<muleVersion>${app.runtime}</muleVersion>
-<username>${anypoint.username}</username>
-<password>${anypoint.password}</password>
-<businessGroup>${businessGroup}</businessGroup>
-<workers>${workers}</workers>
-<workerType>${workerType}</workerType>
+<muleVersion>4.2.2</muleVersion>
+<username>1-mar</username>
+<password>Password@1</password>
+<businessGroup>Apisero</businessGroup>
+
+<workerType>SMALL</workerType>
 <region>us-west-1</region>
-<environment>${environment}</environment>
-<applicationName>${applicationName}</applicationName>
+<environment>Sandbox</environment>
+<applicationName>azure-cicd</applicationName>
 <properties>
-<mule.env>${mule.env}</mule.env>
-<encrypt.key>${encrypt.key}</encrypt.key>
-<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
-<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
-<api.id>${ilg.api.version}</api.id>
+
 <anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
 </properties>
 </cloudHubDeployment>
