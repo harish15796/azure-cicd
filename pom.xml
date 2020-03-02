@@ -23,28 +23,20 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.3.5</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
-			</plugin>
-			<plugin>
- <groupId>org.mule.tools.maven</groupId>
- <artifactId>mule-maven-plugin</artifactId>
- <version>3.3.5</version>
- <extensions>true</extensions>
-<configuration>
-<cloudHubDeployment>
+				<cloudHubDeployment>
 <uri>https://anypoint.mulesoft.com</uri>
-<muleVersion>4.2.2</muleVersion>
-<username>1-mar</username>
-<password>Password@1</password>
-<businessGroup>Apisero</businessGroup>
+<muleVersion>${app.runtime}</muleVersion>
+<username>${anypoint.username}</username>
+<password>${anypoint.password}</password>
+<businessGroup>${businessGroup}</businessGroup>
 <workers>${workers}</workers>
-<workerType>SMALL</workerType>
+<workerType>${workerType}</workerType>
 <region>us-west-1</region>
-<environment>Sandbox</environment>
-<applicationName>azure-cicd</applicationName>
+<environment>${environment}</environment>
+<applicationName>${applicationName}</applicationName>
 <properties>
 <mule.env>${mule.env}</mule.env>
 <encrypt.key>${encrypt.key}</encrypt.key>
@@ -66,9 +58,9 @@
 </execution>
 </executions>
 <classifier>mule-application</classifier>
- </configuration>
- </plugin>
-			
+				
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

@@ -4,12 +4,12 @@
 	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="05a81b1e-4ddd-4cdb-bab0-cc2904fd9089" >
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="f63bbd8f-0a00-43b0-92ba-3403e75a3df3" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="azure-cicdFlow" doc:id="e20f7b15-6d1c-41f4-96fe-bce4392507f9" >
-		<http:listener doc:name="Listener" doc:id="6365311b-83fd-4383-8361-167bad21b4f5" config-ref="HTTP_Listener_config" path="azure"/>
-		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="6e5cca38-c461-44d4-9ece-7ad6e13270ab" />
-		<logger level="INFO" doc:name="Logger" doc:id="e71a204b-1638-48f1-8715-b3fb9a708d2b" message="connection established !!!!"/>
+	<flow name="azure-cicdFlow" doc:id="23ea9c5c-9932-423b-8708-9e63ea249d17" >
+		<http:listener doc:name="Listener" doc:id="0092511d-e423-4c7c-aa64-397aaa947ac6" config-ref="HTTP_Listener_config" path="azure"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="4690a27b-586f-499d-81d7-3317ae7297c6" />
+		<logger level="INFO" doc:name="Logger" doc:id="2a6e4b4e-d40a-4d24-8414-be5604c673b4" message="cicd pipeline connection established!!!"/>
 	</flow>
 </mule>
