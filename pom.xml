@@ -36,12 +36,12 @@
 <configuration>
 <cloudHubDeployment>
 <uri>https://anypoint.mulesoft.com</uri>
-<muleVersion>${app.runtime}</muleVersion>
-<username>${anypoint.username}</username>
-<password>${anypoint.password}</password>
-<businessGroup>${businessGroup}</businessGroup>
+<muleVersion>4.2.2</muleVersion>
+<username>1-mar</username>
+<password>Password@1</password>
+<businessGroup>Apisero</businessGroup>
 <workers>${workers}</workers>
-<workerType>${workerType}</workerType>
+<workerType>SMALL</workerType>
 <region>us-west-1</region>
 <environment>Sandbox</environment>
 <applicationName>azure-cicd</applicationName>
